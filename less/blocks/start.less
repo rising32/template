@@ -1,0 +1,38 @@
+.start {
+	.container;
+	color: @warm-grey;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 40px;
+
+	@media @tablet-widths{
+		margin-bottom: 80px;
+	}
+}
+
+.start__title {
+	.section-title;
+	color: @charcoal;
+	flex-basis: 100%;
+	margin-bottom: 20px;
+}
+
+.start__column {
+
+	@media @phablet-widths {
+		flex-basis: 48%;
+	}
+
+}
+
+.start__column:last-child {
+	@media @tablet-widths{
+		padding-top: 64px;
+	}
+
+	@media @laptop-widths{
+		padding-top: 86px;
+	}
+
+}
